@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 
-<title>Rachelyn is the best</title>
+<title></title>
 </head>
-<body>
-	<h1>coming soon</h1>
+<body style="">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<!-- <script type="text/javascript" src="animation.js"></script> -->
+
+
+	<div id="banner" style="background-color: #00a9cb; height: 200px">
+		<div style="position: absolute; font-family: 'Sofia'; font-size: 50px; z-index: 99; padding-top: 30px; padding-left: 25px; color: white;"> Yi </div>
+		<div id="fadein" style="position: absolute; font-family: 'Sofia'; font-size: 50px; z-index: 99; padding-top: 30px; padding-left: 74px; display: none; color: white;" > t </div>
+		<div style="position: absolute; font-family: 'Sofia'; font-size: 50px; z-index: 99; padding-top: 30px; padding-left: 92px; color: white;"> ian </div>
+		<div>
+			<img id="paper-crane" src="papercrane.gif" style="height: 70px; width: 70px;  z-index: 0; padding-left: 40px; padding-top: 35px">
+		</div>
+		
+	</div>
+
+	<script>
+		$(document).ready(function(){
+	   		$("#paper-crane").delay(3000).animate({marginLeft: "+=1370px"}, 2000); 
+	   		$("#paper-crane").fadeOut(1500);
+ 			$("#fadein").fadeIn(7000);
+
+		});
+	</script>
 
 </body>
 </html>
