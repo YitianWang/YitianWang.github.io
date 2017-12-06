@@ -1,8 +1,8 @@
  $(document).ready(function(){
  	
-	$("#paper-crane").delay(3000).animate({marginLeft: "+=1500px"}, 4000); 
-	$("#fadeout").delay(4500).fadeOut(800);
-	$("#fadein").delay(3000).fadeIn(3000);
+	$("#paper-crane").delay(4000).animate({marginLeft: "+=1500px"}, 5000); 
+	$("#fadeout").delay(4500).fadeOut(2500);
+	$("#fadein").delay(4000).fadeIn(3000);
 
 
 });
