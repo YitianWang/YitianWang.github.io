@@ -1,5 +1,7 @@
 
 body{	
+	height: 100%;
+	width: 100%;
 	margin: 0;
 	overflow: hidden;
 	background-image: url("banner.jpg");
@@ -22,6 +24,13 @@ h1, h2, h3, h4{
 	background: -webkit-linear-gradient(left, #c7c7c5, #deddd8); 
 	opacity: 0.5;
 }*/
+@media only screen and (max-width: 320px) {
+
+   body { 
+      font-size: 2em; 
+   }
+
+}
 
 #main{
 	width: 80%;
