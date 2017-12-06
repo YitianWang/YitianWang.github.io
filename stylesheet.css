@@ -1,18 +1,15 @@
 
 body{	
 	margin: 0;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	background-color: #b8bdb9;
-	text-align: center;
-	
-}
-
-#banner{
+	overflow: hidden;
 	background-image: url("banner.jpg");
-	width: 100%;
-	height: 400px;
-	display: inline-block;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+}
+
+#main{
+	width: 100%;
+	height: 400px;
+	margin: auto;
+	
 }
