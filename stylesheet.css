@@ -5,13 +5,23 @@ body{
 	background-image: url("banner.jpg");
 	background-repeat: no-repeat;
 }
-
-#banner{
-	width: 100%;
-	height: 150px;
-	background: -webkit-linear-gradient(left, #c7c7c5, #deddd8); /* For Safari 5.1 to 6.0 */
-	opacity: 0.5;
+h1, h2, h3, h4{
+	text-align: center;
 }
+/*h2{
+	position: relative;
+	text-align: center;
+	font-size: 2rem;
+	padding-top: 50px;
+}*/
+
+
+/*#banner{
+	width: 100%;
+	height: 100px;
+	background: -webkit-linear-gradient(left, #c7c7c5, #deddd8); 
+	opacity: 0.5;
+}*/
 
 #main{
 	width: 80%;
@@ -24,16 +34,107 @@ body{
     width: 0px;
     background: transparent; /* make scrollbar transparent */
 }
+
+
 .section{
-	background-color: #ffffff;
 	width: 100%; 
 	height: 500px; 
-	opacity: 0.5;
 }
+
+
+#section1{
+	height: 800px;
+	background: rgba(255, 255, 255, 0);
+}
+
+#section1 h1{
+	color: #1e2b33;
+	font-size: 5rem;
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+	padding-top: 150px;
+	margin-bottom: 20px;
+}
+
+#section1 h1::before,
+#section1 h1::after {
+    display: inline-block;
+    content: "";
+    border-top: .2rem solid #1e2b33; /*the height of the line*/ 
+    width: 15rem;     /*the length of the line*/
+    margin: 0 1.5rem; /*top margin and right margin */
+    transform: translateY(-.6rem); /*the position of the line */
+}
+
+#section1 h2{
+	size: 10px;
+}
+
+
+
+
+#section2{
+	background: rgba(224,223,218, 0.2);
+}
+
+#section2 h1{
+	font-size: 70px;
+	padding-top: 15px;
+	font-family: 'Caveat', cursive;
+}
+
+
+
+#section3{
+	background: rgba(142,168,175, 0.2);
+}
+#section3 h1{
+	font-size: 70px;
+	padding-top: 15px;
+	font-family: 'Caveat', cursive;
+}
+
+
+
+
+#section4{
+	background: rgba(104,139,155, 0.2);
+}
+
+#section4 h1{
+	font-size: 70px;
+	padding-top: 15px;
+	font-family: 'Caveat', cursive;
+}
+
+
 
 #footer{
 	width: 100%;
-	height: 150px; 
-	background: -webkit-linear-gradient(left, #1d2a32, #7893a3);
-	opacity: 0.5;
+	height: 200px;
+	background: rgba(29,42,50, 0.2);
+}
+#icon{
+	width: 60%;
+	height: 50%;
+	margin: auto;
+	padding-top: 50px;
+}
+
+.row{
+    display: table;
+    clear: both;
+    width: 80%;
+    height: 100%;
+}
+
+.column{
+    box-sizing: border-box;
+    float: left;
+    align-content: center;
+    width: 33%;
+}
+i{
+	color: white;
+	opacity: 1;
 }
