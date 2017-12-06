@@ -33,7 +33,7 @@ body{
 
 #footer{
 	width: 100%;
-	height: 150px;
-	background-color: #1d2a32;
+	height: 150px; 
+	background: -webkit-linear-gradient(left, #1d2a32, #7893a3);
 	opacity: 0.5;
 }
