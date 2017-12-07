@@ -1,7 +1,5 @@
 
 body{	
-	height: 100%;
-	width: 100%;
 	margin: 0;
 	overflow: hidden;
 	background-image: url("banner.jpg");
@@ -70,7 +68,7 @@ h1, h2, h3, h4{
     display: inline-block;
     content: "";
     border-top: .2rem solid #1e2b33; /*the height of the line*/ 
-    width: 15rem;     /*the length of the line*/
+    width: 10rem;     /*the length of the line*/
     margin: 0 1.5rem; /*top margin and right margin */
     transform: translateY(-.6rem); /*the position of the line */
 }
