@@ -7,7 +7,6 @@ body{
 }
 h1, h2, h3, h4, p{
 	text-align: center;
-
 }
 /*h2{
 	position: relative;
@@ -32,10 +31,10 @@ h1, h2, h3, h4, p{
 }
 
 #main{
+	width: 80%;
 	height: 100vh;
 	margin: auto;
 	overflow-y: scroll;
-	background: rgba(255, 255, 255, 0);
 }
 
 ::-webkit-scrollbar {
@@ -57,7 +56,7 @@ h1, h2, h3, h4, p{
 
 #section1 h1{
 	color: #1e2b33;
-	font-weight: bold;
+	font-size: 5rem;
 	font-family: 'Dancing Script', cursive;
 	text-align: center;
 	padding-top: 150px;
@@ -74,14 +73,19 @@ h1, h2, h3, h4, p{
     transform: translateY(-.6rem); /*the position of the line */
 }
 
+#section1 h2{
+	size: 10px;
+}
+
+
 
 
 #section2{
 	background: rgba(224,223,218, 0.2);
 }
 
-.header{
-	font-weight: bold;
+#section2 h1{
+	font-size: 50px;
 	padding-top: 15px;
 	font-family: 'Dancing Script', cursive;
 }
@@ -91,11 +95,15 @@ h1, h2, h3, h4, p{
 #section3{
 	background: rgba(142,168,175, 0.2);
 }
-
+#section3 h1{
+	font-size: 50px;
+	padding-top: 15px;
+	font-family: 'Dancing Script', cursive;
+}
 #section3 p{
 	font-family: "Times New Roman", Times, serif;
 	color: rgb(242, 242, 242);
-	margin: auto;
+
 }
 
 
@@ -105,7 +113,11 @@ h1, h2, h3, h4, p{
 	background: rgba(104,139,155, 0.2);
 }
 
-
+#section4 h1{
+	font-size: 50px;
+	padding-top: 15px;
+	font-family: 'Dancing Script', cursive;
+}
 
 
 
