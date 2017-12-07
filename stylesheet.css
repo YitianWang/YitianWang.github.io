@@ -1,27 +1,40 @@
-@media only screen and (max-width: 600px){
-
-	#section1 h1{
-		font-size: 
-	}
-
-	#section1 h1::before,
-	#section1 h1::after {
-	    display: inline;
-	}
+@media only screen and (max-width: 767.5px){
 
 	#section1 h4{
-		font-size: 14px;
+		font-size: 12px;
 	}
 	#section1 h3{
-		font-size: 18px;
-		font-weight: bold;
+		font-size: 16px;
 	}
-
 	#section3 p{
 		font-size: 18px;
 	}
 
 }
+@media only screen and (max-width: 400px){
+	#section1 h1::before,
+	#section1 h1::after {
+	    display: none;
+	}
+}
+
+@media only screen and (max-width: 278px){
+
+	#section1 h1::before,
+	#section1 h1::after {
+	    display: inline-block;
+	    content: "";
+	    border-top: .2rem solid #1e2b33; /*the height of the line*/ 
+	    width: 100px;     /*the length of the line*/
+	    margin: 0 1.5rem; /*top margin and right margin */
+	    transform: translateY(-.6rem); /*the vertical position of the line */
+	}
+	#section1 h1::after{
+		margin-left: -18%;
+	}
+
+}
+
 
 body{	
 	margin: 0;
@@ -62,16 +75,27 @@ body{
 	font-family: 'Dancing Script', cursive;
 	padding-top: 150px;
 	margin-bottom: 20px;
+	z-index: 99;
 }
 
-#section1 h1::before,
-#section1 h1::after {
-    display: inline-block;
+
+h1:before,
+h1:after {
+    background-color: #000;
     content: "";
-    border-top: .2rem solid #1e2b33; /*the height of the line*/ 
-    width: 10rem;     /*the length of the line*/
-    margin: 0 1.5rem; /*top margin and right margin */
-    transform: translateY(-.6rem); /*the position of the line */
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    vertical-align: middle;
+    width: 15%;
+}
+h1:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+h1:after {
+    left: 0.5em;
+    margin-right: -50%;
 }
 
 
@@ -88,6 +112,8 @@ body{
 
 #section3{
 	background: rgba(142,168,175, 0.2);
+	font-family: Segoe UI;
+	font-weight: bold;
 }
 
 #section4{
