@@ -1,20 +1,37 @@
 @media only screen and (max-width: 767.5px){
 
-	#section1 h4{
-		font-size: 12px;
-	}
-	#section1 h3{
+	#section1 h1{
 		font-size: 16px;
 	}
+	#section1 h5{
+		font-size: 16px;
+	}
+	#section1 h4{
+		font-size: 20px;
+	}
 	#section3 p{
-		font-size: 18px;
+		font-size: 14px;
 	}
 
 }
 @media only screen and (max-width: 400px){
+
+	#section1 h1{
+		font-size: 2.5rem;
+	}
 	#section1 h1::before,
 	#section1 h1::after {
 	    display: none;
+	}
+
+	#section1 h5{
+		font-size: 12px;
+	}
+	#section1 h4{
+		font-size: 16px;
+	}
+	#section3 p{
+		font-size: 12px;
 	}
 }
 
@@ -33,6 +50,19 @@
 		margin-left: -18%;
 	}
 
+	#section1 h1{
+		font-size: 16px;
+	}
+	#section1 h5{
+		font-size: 12px;
+	}
+	#section1 h4{
+		font-size: 14px;
+	}
+	#section3 p{
+		font-size: 12px;
+	}
+
 }
 
 
@@ -47,7 +77,8 @@ body{
 
 #main{
 	height: 100vh;
-	margin: auto;
+	margin: 0;
+	padding: 0;
 	overflow-y: scroll;
 	background: rgba(255, 255, 255, 0);
 }
@@ -70,12 +101,10 @@ body{
 }
 
 #section1 h1{
-	color: #1e2b33;
-	font-weight: bold;
 	font-family: 'Dancing Script', cursive;
-	padding-top: 150px;
+	padding-top: 200px;
 	margin-bottom: 20px;
-	z-index: 99;
+	font-size: 3.5rem;
 }
 
 
@@ -98,22 +127,34 @@ h1:after {
     margin-right: -50%;
 }
 
-
-
 #section2{
 	background: rgba(224,223,218, 0.2);
 }
 
 .header{
-	font-weight: bold;
 	padding-top: 15px;
 	font-family: 'Dancing Script', cursive;
 }
 
+#section2 .row{
+	margin: 4rem;
+	height: 50%;
+}
+
+.card{
+	height: 80%;
+}
+.card-mouseover{
+	background-color: rgb(73,197,182);
+}
+
+
+
+
+
 #section3{
 	background: rgba(142,168,175, 0.2);
 	font-family: Segoe UI;
-	font-weight: bold;
 }
 
 #section4{
@@ -137,3 +178,77 @@ i{
 	padding-top: 60px;
 	padding-left: 6%;
 }
+
+
+
+
+
+
+
+.carousel-container {
+  width: 210px;
+  height: 140px;
+  position: relative;
+  perspective: 1000px;
+  margin-left: 200px;
+}
+
+#carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+#carousel figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 186px;
+  height: 116px;
+  left: 10px;
+  top: 10px;
+  border: 2px solid black;
+  background: rgba(104,139,155, 0.5);
+}
+
+#carousel figure:nth-child(1) { transform: rotateY(   0deg ) translateZ( 182px ); }
+#carousel figure:nth-child(2) { transform: rotateY(  60deg ) translateZ( 182px ); }
+#carousel figure:nth-child(3) { transform: rotateY( 120deg ) translateZ( 182px ); }
+#carousel figure:nth-child(4) { transform: rotateY( 180deg ) translateZ( 182px ); }
+#carousel figure:nth-child(5) { transform: rotateY( 240deg ) translateZ( 182px ); }
+#carousel figure:nth-child(6) { transform: rotateY( 300deg ) translateZ( 182px ); }
+
+/*.slide1-carousel{
+	#carousel figure:nth-child(1) { transform: rotateY(   -0deg ) translateZ( -182px );
+}
+.slide2-carousel{
+	#carousel figure:nth-child(2) { transform: rotateY(  -60deg ) translateZ( -182px );
+}
+.slide3-carousel{
+	#carousel figure:nth-child(3) { transform: rotateY( -120deg ) translateZ( -182px );
+}
+.slide4-carousel{
+	#carousel figure:nth-child(4) { transform: rotateY( -180deg ) translateZ( -182px );
+}
+.slide5-carousel{
+	#carousel figure:nth-child(5) { transform: rotateY( -240deg ) translateZ( -182px );
+}
+.slide6-carousel{
+	#carousel figure:nth-child(6) { transform: rotateY( -300deg ) translateZ( -182px );
+}
+*/
+
+/*
+#carousel figure:nth-child(1) { transform: rotateY(   -0deg ) translateZ( -182px ); }
+#carousel figure:nth-child(2) { transform: rotateY(  -60deg ) translateZ( -182px ); }
+#carousel figure:nth-child(3) { transform: rotateY( -120deg ) translateZ( -182px ); }
+#carousel figure:nth-child(4) { transform: rotateY( -180deg ) translateZ( -182px ); }
+#carousel figure:nth-child(5) { transform: rotateY( -240deg ) translateZ( -182px ); }
+#carousel figure:nth-child(6) { transform: rotateY( -300deg ) translateZ( -182px ); }
+
+*/
+
+
+
+
