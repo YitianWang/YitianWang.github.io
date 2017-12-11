@@ -5,6 +5,6 @@
  	});
  	$(".card").mouseleave(function(){
  		$(this).removeClass("card-mouseover");
- 	});s
+ 	});
 
 });
