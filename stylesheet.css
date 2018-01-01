@@ -136,17 +136,7 @@ h1:after {
 	font-family: 'Dancing Script', cursive;
 }
 
-#section2 .row{
-	margin: 4rem;
-	height: 50%;
-}
 
-.card{
-	height: 80%;
-}
-.card-mouseover{
-	background-color: rgb(73,197,182);
-}
 
 
 
@@ -159,6 +149,20 @@ h1:after {
 
 #section4{
 	background: rgba(104,139,155, 0.2);
+}
+
+#section4 .row{
+	margin: 4rem;
+	height: 50%;
+}
+
+.card{
+	height: 80%;
+	background: rgba(104,139,155, 0.2);
+	border: none;
+}
+.card-mouseover{
+	background-color: rgb(73,197,182);
 }
 
 #footer{
