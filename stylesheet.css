@@ -106,6 +106,9 @@ body{
 	margin-bottom: 20px;
 	font-size: 3.5rem;
 }
+#section1 h5{
+	font-weight: normal;
+}
 
 
 h1:before,
